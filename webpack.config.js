@@ -46,9 +46,9 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2)$/,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "assets/fonts/[name].[contenthash][ext]"
+          filename: 'assets/fonts/[name].[contenthash][ext]'
         }
       }
     ]
@@ -71,7 +71,7 @@ module.exports = {
       ]
     }),
     new Dotenv(),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin()
   ],
   optimization: {
     minimize: true,
